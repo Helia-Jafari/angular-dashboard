@@ -1,0 +1,15 @@
+:root {
+  --primary-bg: #ffffff;
+  --primary-text: #1e1e1e;
+}
+
+.dark-theme {
+  --primary-bg: #121212;
+  --primary-text: #ffffff;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  transition: all 0.3s ease;
+}
