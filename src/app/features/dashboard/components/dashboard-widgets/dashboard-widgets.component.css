@@ -1,0 +1,81 @@
+
+/* کلیت Wrapper */
+.dashboard-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 25px;
+  justify-content: center;
+  background: var(--wrapper-bg);
+  border-radius: 16px;
+}
+
+/* کارت‌ها */
+.card-widget {
+  background: var(--card-bg);
+  border-radius: 16px;
+  flex: 1 1 220px;
+  max-width: 280px;
+  padding: 20px;
+  box-shadow: 0 6px 18px var(--card-shadow);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.card-widget:hover {
+  transform: translateY(-8px) rotate(-1deg);
+  box-shadow: 0 12px 24px var(--card-shadow-hover);
+}
+
+/* هدر کارت */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-header h4 {
+  font-size: 17px;
+  color: var(--card-text);
+  margin: 0;
+}
+
+/* روند تغییرات */
+.trend {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.trend.up { color: var(--trend-up); }
+.trend.down { color: var(--trend-down); }
+.trend.neutral { color: var(--trend-neutral); }
+
+/* بدنه کارت */
+.card-body .value {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--value-text);
+  margin: 8px 0;
+}
+
+.card-body .description {
+  font-size: 13px;
+  color: var(--desc-text);
+  line-height: 1.4;
+}
+
+/* ریسپانسیو */
+@media (max-width: 1300px) and (min-width: 1044px) {
+  .card-widget { flex: 1 1 48%; max-width: 48%; }
+}
+
+@media (max-width: 900px) {
+  .card-widget { flex: 1 1 45%; max-width: 45%; }
+}
+
+@media (max-width: 480px) {
+  .card-widget { flex: 1 1 100%; max-width: 100%; }
+  .card-body .value { font-size: 26px; }
+  .card-header h4 { font-size: 15px; }
+}

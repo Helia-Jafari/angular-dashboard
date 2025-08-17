@@ -1,0 +1,14 @@
+<div class="dashboard-wrapper" #container>
+  <div class="card-widget" *ngFor="let widget of widgets">
+    <div class="card-header">
+      <h4>{{ widget.title }}</h4>
+      <span class="trend" [ngClass]="widget.trend">
+        {{ widget.trendValue }}
+      </span>
+    </div>
+    <div class="card-body">
+      <p class="value">{{ widget.value }}</p>
+      <p class="description">{{ widget.description }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,86 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 1rem;
+  background: linear-gradient(90deg, var(--title-gradient-start), var(--title-gradient-end));
+  color: var(--text-color);
+  box-shadow: 0 6px 18px var(--card-shadow);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.topbar .left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.menu-btn {
+  background: var(--button-bg);
+  border: none;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.menu-btn:hover {
+  transform: scale(1.1);
+  background: var(--button-bg-hover);
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px var(--text-shadow);
+  color: var(--title-color);
+}
+
+.topbar .right button {
+  margin-left: 0.6rem;
+  color: var(--text-color);
+  background: var(--button-bg);
+  border: 1px solid var(--button-border);
+  transition: transform 0.2s, background 0.3s, box-shadow 0.3s, border 0.3s;
+  box-shadow: 0 2px 6px var(--button-shadow);
+  border-radius: 0.5rem;
+  height: 45px;
+  width: 45px;
+  padding: 6px !important;
+}
+
+.topbar .right button mat-icon {
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  height: 40px;
+  width: 40px;
+  margin-top: 15px;
+  vertical-align: middle;
+  transition: transform 0.2s;
+}
+
+.topbar .right button:hover {
+  transform: scale(1.05);
+  background: var(--button-bg-hover);
+  border: 1px solid var(--button-border-hover);
+  box-shadow: 0 4px 12px var(--button-shadow-hover);
+}
+
+.topbar .right button:hover mat-icon {
+  transform: scale(1.05);
+}
+
+@media (max-width: 780px) {
+  .menu-btn {
+    display: inline-block;
+  }
+}

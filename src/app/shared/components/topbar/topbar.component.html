@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" class="topbar">
+  <div class="left">
+    <!-- <button class="menu-btn" *ngIf="isMobile" (click)="toggleSidebarEmit()">☰</button> -->
+    <button class="menu-btn" (click)="toggleSidebarEmit()">☰</button>
+    <span class="brand">MyApp</span>
+  </div>
+
+  <div class="right d-flex">
+    <button (click)="toggleTheme()" class="d-flex align-items-center justify-content-center" mat-icon-button><mat-icon>brightness_6</mat-icon></button>
+    <button (click)="search()" class="d-flex align-items-center justify-content-center" mat-icon-button><mat-icon>search</mat-icon></button>
+    <button (click)="showNotifications()" class="d-flex align-items-center justify-content-center" mat-icon-button><mat-icon>notifications</mat-icon></button>
+    <button (click)="accountSettings()" class="d-flex align-items-center justify-content-center" mat-icon-button><mat-icon>account_circle</mat-icon></button>
+  </div>
+</mat-toolbar>

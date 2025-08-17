@@ -1,15 +1,119 @@
+/* =========================
+   Global Light & Dark Theme Variables
+   ========================= */
+
+/* ----- Light Theme (Default) ----- */
+/* ----- Light Theme (Default) ----- */
 :root {
-  --primary-bg: #ffffff;
-  --primary-text: #1e1e1e;
+  /* عمومی */
+  --background-color: #f0f8ff;
+  --text-color: #A5D7E8;
+  --main-bg: #f0f8ff;
+
+  /* کارت‌ها و Wrapper */
+  --card-bg: linear-gradient(135deg, #ffffff, #f9fafc);
+  --wrapper-bg: #f0f8ff;
+  --card-text: #1a1a1a;
+  --value-text: #34495e;
+  --desc-text: #555;
+  --trend-up: #27ae60;
+  --trend-down: #e74c3c;
+  --trend-neutral: #95a5a6;
+  --card-shadow: rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: rgba(0, 0, 0, 0.12);
+
+  /* نمودارها */
+  --charts-bg: #f0f8ff;
+
+  /* عناوین و لوگو */
+  --title-color: #A5D7E8;
+  --title-gradient-start: #0B2447;
+  --title-gradient-end: #19376D;
+  --chart-title: #19376D;
+
+  /* کارت پیشرفته */
+  --card-bg-start: #ffffff;
+  --card-bg-end: #f9fafc;
+  --card-border: rgba(0, 0, 0, 0.05);
+
+  /* دکمه‌ها */
+  --button-bg: rgba(104, 126, 255, 0.1);
+  /* #687EFF با شفافیت */
+  --button-bg-hover: rgba(104, 126, 255, 0.2);
+  --button-border: rgba(104, 126, 255, 0.4);
+  --button-border-hover: rgba(104, 126, 255, 0.6);
+  --button-shadow: rgba(104, 126, 255, 0.2);
+  --button-shadow-hover: rgba(104, 126, 255, 0.3);
+  --text-shadow: rgba(0, 0, 0, 0.15);
+
+  /* سایدبار */
+  --sidebar-gradient-start: #0B2447;
+  --sidebar-gradient-end: #19376D;
+  --sidebar-text-color: #A5D7E8;
+  --sidebar-shadow: rgba(0, 0, 0, 0.5);
+  --sidebar-hover-bg: rgba(255, 255, 255, 0.08);
+  --sidebar-active-bg: rgba(255, 255, 255, 0.15);
 }
 
-.dark-theme {
-  --primary-bg: #121212;
-  --primary-text: #ffffff;
+
+/* ----- Dark Theme ----- */
+body.dark-theme {
+  /* عمومی */
+  --background-color: #1e1e1e;
+  --text-color: #ffffff;
+  --main-bg: #1e1e1e;
+
+  /* کارت‌ها و Wrapper */
+  --card-bg: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+  --wrapper-bg: #1e1e1e;
+  --card-text: #ffffff;
+  --value-text: #ecf0f1;
+  --desc-text: #95a5a6;
+  --trend-up: #27ae60;
+  --trend-down: #e74c3c;
+  --trend-neutral: #7f8c8d;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+  --card-shadow-hover: rgba(0, 0, 0, 0.5);
+
+  /* نمودارها */
+  --charts-bg: #1e1e1e;
+
+  /* عناوین و لوگو */
+  --title-color: #ffffff;
+  --title-gradient-start: #687EFF;
+  --title-gradient-end: #80B3FF;
+  --chart-title: #80B3FF;
+
+  /* کارت پیشرفته */
+  --card-bg-start: #2c2c2c;
+  --card-bg-end: #3a3a3a;
+  --card-border: rgba(255, 255, 255, 0.1);
+
+  /* دکمه‌ها */
+  --button-bg: rgba(255, 255, 255, 0.05);
+  --button-bg-hover: rgba(255, 255, 255, 0.1);
+  --button-border: rgba(255, 255, 255, 0.2);
+  --button-border-hover: rgba(255, 255, 255, 0.4);
+  --button-shadow: rgba(0, 0, 0, 0.5);
+  --button-shadow-hover: rgba(0, 0, 0, 0.6);
+  --text-shadow: rgba(0, 0, 0, 0.6);
+
+  /* سایدبار */
+  --sidebar-gradient-start: #687EFF;
+  --sidebar-gradient-end: #80B3FF;
+  --sidebar-text-color: #ffffff;
+  --sidebar-shadow: rgba(0, 0, 0, 0.15);
+  --sidebar-hover-bg: rgba(152, 228, 255, 0.3);
+  /* #98E4FF */
+  --sidebar-active-bg: rgba(182, 255, 250, 0.5);
+  /* #B6FFFA */
 }
 
+/* =========================
+   General Body Styles
+   ========================= */
 body {
-  background-color: var(--primary-bg);
-  color: var(--primary-text);
+  background-color: var(--background-color);
+  color: var(--text-color);
   transition: all 0.3s ease;
 }

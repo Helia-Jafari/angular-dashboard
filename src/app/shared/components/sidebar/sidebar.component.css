@@ -1,0 +1,54 @@
+.sidebar {
+    background: linear-gradient(180deg, var(--sidebar-gradient-start), var(--sidebar-gradient-end));
+    color: var(--sidebar-text-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 4px 0 15px var(--sidebar-shadow);
+    width: 250px;
+}
+
+mat-nav-list {
+    margin-top: 1.5rem;
+}
+
+a[mat-list-item] {
+    border-radius: 0.6rem;
+    margin: 0.3rem 0;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: var(--sidebar-hover-bg);
+    transform: translateX(4px);
+}
+
+a.active {
+    background: var(--sidebar-active-bg);
+}
+
+.icon {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    color: var(--sidebar-text-color);
+}
+
+.fa-users {
+    font-size: 1.1rem;
+}
+
+.menu-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--sidebar-text-color);
+}
+
+@media (max-width: 780px) {
+    .sidebar {
+        width: 0px;
+    }
+}
