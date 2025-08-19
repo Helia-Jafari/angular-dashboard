@@ -23,22 +23,25 @@ export class DashboardChartsComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-      this.initLineChart();
-      this.initBarChart();
-      this.initDoughnutChart();
-      this.initPieChart();
-      this.initRadarChart();
-      this.initPolarAreaChart();
+      setTimeout(() => {
 
-      // GSAP animation
-      gsap.set(".chart-card", { opacity: 0, y: 50 });
-      gsap.to(".chart-card", {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        stagger: 0.2,
-        ease: "power3.out"
-      });
+        this.initLineChart();
+        this.initBarChart();
+        this.initDoughnutChart();
+        this.initPieChart();
+        this.initRadarChart();
+        this.initPolarAreaChart();
+
+        // GSAP animation
+        gsap.set(".chart-card", { opacity: 0, y: 50 });
+        gsap.to(".chart-card", {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          stagger: 0.2,
+          ease: "power3.out"
+        });
+      }, 500);
     }
   }
 

@@ -1,21 +1,19 @@
 <div class="app-container">
   <!-- Sidebar -->
-  <app-sidebar 
-    [isSidebarShown]="isSidebarShown" 
-    [isMobile]="isMobile">
+  <app-sidebar [isSidebarShown]="isSidebarShown" [isMobile]="isMobile">
   </app-sidebar>
 
   <!-- Main Content -->
   <div class="main-content" [class.collapsed]="!isMobile">
     <!-- Topbar -->
-    <app-topbar 
-      [isMobile]="isMobile"
-      (toggleSidebar)="toggleSidebar()">
+    <app-topbar [isMobile]="isMobile" (toggleSidebar)="toggleSidebar()">
     </app-topbar>
 
     <!-- Router Content -->
     <div class="content">
-      <router-outlet></router-outlet>
+      <div class="container">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
 </div>

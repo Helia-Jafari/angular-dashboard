@@ -4,7 +4,7 @@
   align-items: center;
   height: 64px;
   padding: 0 1rem;
-  background: linear-gradient(90deg, var(--title-gradient-start), var(--title-gradient-end));
+  background: linear-gradient(90deg, var(--topbar-gradient-start), var(--topbar-gradient-end));
   color: var(--text-color);
   box-shadow: 0 6px 18px var(--card-shadow);
   border-bottom-left-radius: 1rem;

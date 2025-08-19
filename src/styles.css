@@ -12,7 +12,7 @@
 
   /* کارت‌ها و Wrapper */
   --card-bg: linear-gradient(135deg, #ffffff, #f9fafc);
-  --wrapper-bg: #f0f8ff;
+  --wrapper-bg: #e4f0fb;
   --card-text: #1a1a1a;
   --value-text: #34495e;
   --desc-text: #555;
@@ -29,6 +29,8 @@
   --title-color: #A5D7E8;
   --title-gradient-start: #0B2447;
   --title-gradient-end: #19376D;
+  --topbar-gradient-start: #0B2447;
+  --topbar-gradient-end: #19376D;
   --chart-title: #19376D;
 
   /* کارت پیشرفته */
@@ -59,12 +61,12 @@
 /* ----- Dark Theme ----- */
 body.dark-theme {
   /* عمومی */
-  --background-color: #1e1e1e;
+  --background-color: #1a191e;
   --text-color: #ffffff;
-  --main-bg: #1e1e1e;
+  --main-bg: #1a191e;
 
   /* کارت‌ها و Wrapper */
-  --card-bg: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+  --card-bg: linear-gradient(135deg, #3224417f, #151547);
   --wrapper-bg: #1e1e1e;
   --card-text: #ffffff;
   --value-text: #ecf0f1;
@@ -76,17 +78,19 @@ body.dark-theme {
   --card-shadow-hover: rgba(0, 0, 0, 0.5);
 
   /* نمودارها */
-  --charts-bg: #1e1e1e;
+  --charts-bg: #1a191e;
 
   /* عناوین و لوگو */
   --title-color: #ffffff;
-  --title-gradient-start: #687EFF;
-  --title-gradient-end: #80B3FF;
-  --chart-title: #80B3FF;
+  --topbar-gradient-start: #3224417f;
+  --topbar-gradient-end: #151547;
+  --title-gradient-start: #DDDDDD;
+  --title-gradient-end: #b4b2c6;
+  --chart-title: #fff;
 
   /* کارت پیشرفته */
-  --card-bg-start: #2c2c2c;
-  --card-bg-end: #3a3a3a;
+  --card-bg-start: #322441;
+  --card-bg-end: #151547;
   --card-border: rgba(255, 255, 255, 0.1);
 
   /* دکمه‌ها */
@@ -99,8 +103,8 @@ body.dark-theme {
   --text-shadow: rgba(0, 0, 0, 0.6);
 
   /* سایدبار */
-  --sidebar-gradient-start: #687EFF;
-  --sidebar-gradient-end: #80B3FF;
+  --sidebar-gradient-start: #3224417f;
+  --sidebar-gradient-end: #151547;
   --sidebar-text-color: #ffffff;
   --sidebar-shadow: rgba(0, 0, 0, 0.15);
   --sidebar-hover-bg: rgba(152, 228, 255, 0.3);
